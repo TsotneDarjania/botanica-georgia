@@ -1,5 +1,6 @@
 // import { useEffect, useState } from 'react';
 import './App.css';
+import Intro from './components/intro/Intro';
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
 
   return (
     <div className="App">
+      <Intro />
  
     </div>
   );

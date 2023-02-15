@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@500&display=swap');
+
+
+.header{
+    width: 70%;
+    height: 110px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-left: 15%;
+    border-bottom: 3px solid rgb(251, 170, 88);
+}
+
+.header ul{
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 30px;
+
+    margin-top: 40px;
+}
+
+.header ul li{
+    cursor: pointer;
+}
+
+.header img{
+    width: 200px;
+    height: 60px;
+
+    border: 4px solid rgb(251, 170, 88);
+}
+
+.userAccount{
+    font-size: 33px;
+    color: rgb(251, 170, 88);
+}
+.userShop{
+    font-size: 37px;
+    color: rgb(251, 170, 88);
+}
+.searchIcon{
+    font-size: 39px;
+    color: rgb(251, 170, 88);
+}
+
+.searchField{
+    height: 33px;
+    width: 0px;
+    margin-top: -4px;
+    border: none;
+    background: none;
+    border-bottom: 3px solid rgb(251, 170, 88);
+    opacity: 0;
+    outline: none;
+    font-size: 20px;
+    color: rgb(251, 170, 88);
+
+    transition: 0.5s;
+}
+
+.showSeacrhField{
+    width: 200px;
+    border-bottom: 3px solid rgb(251, 170, 88);
+    opacity: 1;
+}
+
+.price{
+    color: rgb(251, 170, 88);
+    font-weight: bold;
+    font-size: 22px;
+    font-family: 'Noto Sans Georgian', sans-serif;
+}
