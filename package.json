@@ -1,0 +1,25 @@
+{
+  "name": "botanica-georgia",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.ts",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.ts",
+    "build": "tsc",
+    "dev": "ts-node-dev  --respawn --transpile-only app.ts"
+  },
+  "author": "Tsotne Darjania",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/node": "^18.13.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.9.5"
+  }
+}
