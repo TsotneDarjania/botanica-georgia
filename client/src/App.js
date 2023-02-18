@@ -1,23 +1,19 @@
-// import { useEffect, useState } from 'react';
 import './App.css';
+import About from './components/about/About';
+import Footer from './components/footer/Footer';
+import GiftServices from './components/giftServices/GiftServices';
+import Intro from './components/intro/Intro';
+import Products from './components/products/Products';
 
 function App() {
 
-  // const [backendData, setBackendData] = useState();
-
-  // useEffect( () => {
-  //   fetch("/api").then(
-  //     response => response.json()
-  //   ).then(
-  //     data => {
-  //       setBackendData(data)
-  //     }
-  //   )
-  // }, [])
-
-//asds
   return (
     <div className="App">
+      <Intro />
+      <About />
+      <GiftServices />
+      <Products />
+      <Footer />
  
     </div>
   );

@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@500&display=swap');
+
+
+.intro{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgb(23, 14, 0);
+    z-index: 0;
+}
+
+
+.backgroundImage{
+    position: absolute;
+    top: 0;
+    background: url("../../images/web/background2.jpg");
+    background-repeat: no-repeat;
+    background-size: 150% 200%;
+    z-index: 0;
+    background-position: 0px 0px;
+    
+
+
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    filter: blur(0px);
+
+    z-index: -1;
+
+    animation-name: background-image-animation;
+    animation-duration: 90s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+@keyframes background-image-animation {
+    0%{
+        background-size: 150% 200%;
+        background-position: 50% 50%;
+    }
+    50%{
+        background-size: 100% 150%;
+        background-position: 50% 50%;
+    }
+    100%{
+        background-size: 150% 200%;
+        background-position: 50% 50%;
+    }
+  
+    
+}
+
+.centerContent{
+    width: 70%;
+    height: 600px;
+    margin-left: 15%;
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.centerContent button{
+    padding: 16px 50px;
+    margin-top: 20px;
+    border: none;
+    background-color: rgb(233, 191, 132);
+    box-shadow: 9px 9px 1px 0px rgb(195, 149, 86);
+    color: rgb(22, 7, 0);
+    font-family: 'Noto Sans Georgian', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+
+    opacity: 0;
+    animation-name: opacity-anim;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+
+    transition: 0.5s;
+}
+.centerContent button:hover{
+    background-color: rgb(255, 239, 218);
+    box-shadow: 9px 9px 1px 0px rgb(156, 155, 154);
+}
+@keyframes opacity-anim {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+    
+}
+
+.centerContent p:nth-child(2) {
+    font-size: 20px;
+    animation-delay: 0.8s;
+    color: rgb(233, 191, 132);
+    font-family: 'Noto Sans Georgian', sans-serif;
+    opacity: 0;
+
+    animation-name: opacity-anim;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    
+}
+
+.animationText{
+    width: max-content;
+    height: 60px;
+    width: 100%;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+}
+.animationText p{
+    margin-top: 300px;
+
+    animation-name: animationText;
+    animation-fill-mode: forwards;
+    animation-duration: 0.7s;
+
+    font-family: 'Noto Sans Georgian', sans-serif;
+    color: rgb(255, 233, 197);
+    font-weight: bold;
+    font-size: 33px;
+    letter-spacing: 1px;
+
+    animation-delay: 0.5s;
+}
+@keyframes animationText {
+    from{
+        margin-top: 150px;
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+        margin-top: 25px;
+    }
+    
+}

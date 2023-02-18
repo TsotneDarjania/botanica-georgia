@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@500&display=swap');
+
+
+.giftServices{
+    width: 100%;
+    background-color: rgb(255, 213, 162);
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.giftServices h1{
+    color: rgb(102, 58, 0);
+    font-family: 'Noto Sans Georgian', sans-serif;
+}
+
+.text{
+    color: rgb(102, 58, 0);
+    font-size: 16px;
+    font-family: 'Noto Sans Georgian', sans-serif;
+    margin-top: -17px;
+}
+
+.boxes{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 16px;
+}
+
+.box{
+    width: 20%;
+    height: 95%;
+
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.box:hover{
+    transform: scale(1.06);
+}
+
+.boxImage{
+    width: 100%;
+    height: 90%;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.smallBox{
+    background-image: url("../../images/boxes/small.jpg");
+}
+.mediumBox{
+    background-image: url("../../images/boxes/medium.jpg");
+}
+.bigBox{
+    background-image: url("../../images/boxes/big.jpg");
+}
+
+.details{
+    width: 100%;
+    height: 10%;
+    background-color: rgb(255, 184, 96);
+    font-family: 'Noto Sans Georgian', sans-serif;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(184, 98, 0);
+    font-size: 20px;
+    cursor: pointer;
+}
